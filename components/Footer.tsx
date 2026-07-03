@@ -1,0 +1,10 @@
+export function Footer() {
+  return (
+    <footer className="site-footer">
+      <div className="wrap">
+        <span>&copy; {new Date().getFullYear()} Wanderkeep</span>
+        <span>Book direct for the best rate, every time.</span>
+      </div>
+    </footer>
+  );
+}

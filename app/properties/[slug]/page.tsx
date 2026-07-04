@@ -1,9 +1,31 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { BookingWidget } from "@/components/BookingWidget";
 import { getProperty, properties } from "@/lib/properties";
 
 export function generateStaticParams() {
   return properties.map((property) => ({ slug: property.slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const property = getProperty(slug);
+  if (!property) return {};
+
+  const title = `${property.name} — ${property.location} | J & F Rental Co.`;
+  return {
+    title,
+    description: property.tagline,
+    openGraph: {
+      title,
+      description: property.tagline,
+      type: "website",
+    },
+  };
 }
 
 export default async function PropertyPage({

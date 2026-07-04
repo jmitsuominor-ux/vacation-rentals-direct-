@@ -1,4 +1,4 @@
-# Wanderkeep — direct booking site
+# J & F Rental Co. — direct booking site
 
 Direct booking site for 5 short-term rentals, currently listed on Airbnb and VRBO:
 
@@ -76,5 +76,6 @@ reference (in the dashboard once you have an account):
 ## Deploy
 
 Deploys like any Next.js app (Vercel is the path of least resistance). Needs
-the env vars from `.env.example` set in the hosting environment, plus a
-domain once one's picked.
+the env vars from `.env.example` set in the hosting environment. Domain is
+`jandfrental.com` — point it at whatever host is chosen (e.g. Vercel's
+nameservers, or an A/CNAME record if DNS stays elsewhere).

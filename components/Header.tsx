@@ -5,7 +5,7 @@ export function Header() {
     <header className="site-header">
       <div className="wrap">
         <Link href="/" className="brand">
-          Wander<em>keep</em>
+          J <em>&amp;</em> F Rental Co.
         </Link>
         <nav className="site-nav">
           <Link href="/#oregon">Oregon</Link>

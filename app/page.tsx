@@ -9,7 +9,7 @@ export default function HomePage() {
     <main>
       <div className="wrap">
         <section className="hero">
-          <p className="label">Wanderkeep</p>
+          <p className="label">J &amp; F Rental Co.</p>
           <h1>
             Five homes, <em>kept</em> well.
           </h1>

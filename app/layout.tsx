@@ -4,7 +4,7 @@ import { Footer } from "@/components/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Wanderkeep — Book Direct",
+  title: "J & F Rental Co. — Book Direct",
   description: "Five kept homes across Oregon and Florida. Book direct.",
 };
 

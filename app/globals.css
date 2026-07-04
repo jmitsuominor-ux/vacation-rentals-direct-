@@ -360,6 +360,108 @@ input {
   border-radius: 999px;
 }
 
+/* ---------- Real photo gallery ---------- */
+.gallery {
+  margin-top: 2rem;
+}
+.gallery-hero {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  position: relative;
+  border-radius: 2px;
+  overflow: hidden;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background: var(--surface);
+}
+.gallery-hero img {
+  object-fit: cover;
+}
+.gallery-grid {
+  margin-top: 0.6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr));
+  gap: 0.6rem;
+}
+.gallery-thumb {
+  aspect-ratio: 1;
+  position: relative;
+  border: none;
+  border-radius: 2px;
+  overflow: hidden;
+  padding: 0;
+  cursor: pointer;
+  background: var(--surface);
+}
+.gallery-thumb img {
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+.gallery-thumb:hover img {
+  transform: scale(1.05);
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(12, 9, 6, 0.94);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lightbox-image {
+  position: relative;
+  width: 90vw;
+  height: 85vh;
+}
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  background: transparent;
+  border: none;
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 2rem;
+  line-height: 1;
+  padding: 0.75rem;
+}
+.lightbox-close {
+  top: 1rem;
+  right: 1rem;
+}
+.lightbox-prev {
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+}
+.lightbox-next {
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+}
+.lightbox-count {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  color: var(--ink-dim);
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 46rem) {
+  .lightbox-image {
+    width: 100vw;
+    height: 70vh;
+  }
+}
+
 .property-layout {
   display: grid;
   grid-template-columns: 1.4fr 1fr;

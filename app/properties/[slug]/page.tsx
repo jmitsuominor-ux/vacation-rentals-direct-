@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { BookingWidget } from "@/components/BookingWidget";
+import { PhotoGallery } from "@/components/PhotoGallery";
 import { getProperty, properties } from "@/lib/properties";
 
 export function generateStaticParams() {
@@ -49,10 +50,14 @@ export default async function PropertyPage({
           <p className="tagline">{property.tagline}</p>
         </section>
 
-        <div className={`property-gallery${isFlorida ? " florida" : ""}`}>
-          <span className="placeholder-tag">Photo placeholder</span>
-          <span className="mono">{initial}</span>
-        </div>
+        {property.photos && property.photos.length > 0 ? (
+          <PhotoGallery photos={property.photos} alt={property.name} />
+        ) : (
+          <div className={`property-gallery${isFlorida ? " florida" : ""}`}>
+            <span className="placeholder-tag">Photo placeholder</span>
+            <span className="mono">{initial}</span>
+          </div>
+        )}
 
         <div className="property-layout">
           <div>

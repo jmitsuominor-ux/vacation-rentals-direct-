@@ -19,6 +19,8 @@ export interface Property {
   /** Longer-form description paragraphs for the property page. Falls back to a placeholder when absent. */
   description?: string[];
   details?: PropertyDetails;
+  /** Paths under /public. Falls back to a tinted placeholder panel when absent. */
+  photos?: string[];
   /** Hostaway listing ID this property maps to. Filled in once the Hostaway account is provisioned. */
   hostawayListingId: string | null;
   externalListings: {
@@ -71,6 +73,17 @@ export const properties: Property[] = [
       "Step outside to the private hot tub and fire pit, or walk eight minutes to the river for fishing, swimming, and the kind of afternoon that's hard to leave.",
       "Downtown Rogue River is at your doorstep — restaurants, shops, and small-town Oregon charm all within walking distance. Crater Lake National Park is 1.5 hours away, and I-5 is two minutes out, putting the whole Rogue Valley within easy reach.",
     ],
+    details: {
+      maxGuests: 6,
+      bedrooms: 3,
+      amenityHighlights: [
+        "Private hot tub",
+        "Fire pit",
+        "Master bedroom with king bed",
+        "Two additional bedrooms with queen beds",
+        "Fully equipped kitchen",
+      ],
+    },
     hostawayListingId: null,
     externalListings: {
       airbnb: "https://airbnb.com/h/roguehouse",
@@ -139,6 +152,10 @@ export const properties: Property[] = [
     location: "Ocala, FL",
     region: "florida",
     tagline: "Ocala's ultimate entertainment home.",
+    photos: Array.from(
+      { length: 45 },
+      (_, i) => `/images/brick-city-playhouse/brick-city-playhouse-${String(i + 1).padStart(2, "0")}.jpg`
+    ),
     description: [
       "This fully renovated 4-bedroom, 2-bathroom home sleeps up to 8 and was designed around one idea: every corner should have something worth talking about. The garage was converted into the best game room in Ocala — a 4-player arcade with reclining theater chairs, full-size air hockey, skee-ball, pool table, ping pong, an 80\" TV, and a custom hexagon LED neon ceiling. Sign the Playing Card Wall on your way out — every group that's ever stayed here is on it.",
       "Outside, a private pool and hot tub stay open year-round in Florida's climate, and the fully screened lanai has an 8-person dining table and a fire pit lounge — ideal after a day at the World Equestrian Center or the springs. The yard is fully fenced and private.",

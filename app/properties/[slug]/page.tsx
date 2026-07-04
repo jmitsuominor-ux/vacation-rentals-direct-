@@ -57,10 +57,42 @@ export default async function PropertyPage({
         <div className="property-layout">
           <div>
             <h2>About this stay</h2>
-            <p style={{ color: "var(--ink-dim)", lineHeight: 1.7 }}>
-              Full property description, amenities, and house rules go here — carried
-              over from the {property.name} Airbnb and VRBO listings.
-            </p>
+            {property.description ? (
+              property.description.map((paragraph, i) => <p key={i}>{paragraph}</p>)
+            ) : (
+              <p>
+                Full property description and amenities go here — carried over from the{" "}
+                {property.name} Airbnb and VRBO listings.
+              </p>
+            )}
+
+            {property.details && (
+              <>
+                <h2>House details</h2>
+                <ul className="detail-list">
+                  <li>
+                    {property.details.maxGuests} guests · {property.details.bedrooms}{" "}
+                    bedroom{property.details.bedrooms === 1 ? "" : "s"}
+                    {property.details.bathrooms != null &&
+                      ` · ${property.details.bathrooms} bath${
+                        property.details.bathrooms === 1 ? "" : "s"
+                      }`}
+                  </li>
+                  {(property.details.checkIn || property.details.checkOut) && (
+                    <li>
+                      {property.details.checkIn && `Check-in ${property.details.checkIn}`}
+                      {property.details.checkIn && property.details.checkOut && " · "}
+                      {property.details.checkOut && `Check-out ${property.details.checkOut}`}
+                    </li>
+                  )}
+                  {property.details.minStay && <li>Minimum stay: {property.details.minStay}</li>}
+                  {property.details.amenityHighlights.map((amenity) => (
+                    <li key={amenity}>{amenity}</li>
+                  ))}
+                </ul>
+              </>
+            )}
+
             <div className="external-links">
               {property.externalListings.airbnb && (
                 <a href={property.externalListings.airbnb} target="_blank" rel="noopener noreferrer">

@@ -371,7 +371,32 @@ input {
   font-family: var(--font-display);
   font-weight: 400;
   font-size: 1.3rem;
-  margin-bottom: 0.9rem;
+  margin: 2rem 0 0.9rem;
+}
+.property-layout h2:first-child {
+  margin-top: 0;
+}
+.property-layout p {
+  color: var(--ink-dim);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  max-width: 62ch;
+}
+.detail-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: var(--ink-dim);
+  font-size: 0.92rem;
+}
+.detail-list li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.detail-list li:first-child {
+  color: var(--ink);
+  font-weight: 600;
 }
 .property-layout .external-links {
   display: flex;

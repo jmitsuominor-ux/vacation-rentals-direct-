@@ -98,21 +98,36 @@ export default async function PropertyPage({
               </>
             )}
 
-            <div className="external-links">
-              {property.externalListings.airbnb && (
-                <a href={property.externalListings.airbnb} target="_blank" rel="noopener noreferrer">
-                  View on Airbnb
-                </a>
-              )}
-              {property.externalListings.vrbo && (
-                <a href={property.externalListings.vrbo} target="_blank" rel="noopener noreferrer">
-                  View on VRBO
-                </a>
-              )}
-            </div>
           </div>
 
-          <BookingWidget propertySlug={property.slug} />
+          <div>
+            <BookingWidget propertySlug={property.slug} />
+            {(property.externalListings.airbnb || property.externalListings.vrbo) && (
+              <div className="proof-badges">
+                <p>Also listed on</p>
+                <div className="external-links">
+                  {property.externalListings.airbnb && (
+                    <a
+                      href={property.externalListings.airbnb}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Airbnb
+                    </a>
+                  )}
+                  {property.externalListings.vrbo && (
+                    <a
+                      href={property.externalListings.vrbo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      VRBO
+                    </a>
+                  )}
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </main>

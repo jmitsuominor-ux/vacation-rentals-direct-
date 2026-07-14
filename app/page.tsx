@@ -17,6 +17,11 @@ export default function HomePage() {
             A small collection of character-filled stays across the Rogue Valley and
             Ocala, Florida. Book direct and deal with us, not a platform.
           </p>
+          <div className="trust-bar">
+            <span>No platform fees</span>
+            <span>Real humans, fast replies</span>
+            <span>5 homes across 2 states</span>
+          </div>
         </section>
 
         <section className="region" id="oregon">

@@ -36,6 +36,10 @@ export const properties: Property[] = [
     location: "Rogue River, OR",
     region: "oregon",
     tagline: "A hidden historic home in the heart of Rogue River.",
+    photos: Array.from(
+      { length: 33 },
+      (_, i) => `/images/warren-house/warren-house-${String(i + 1).padStart(2, "0")}.jpg`
+    ),
     description: [
       "Warren House is a restored 1800s cottage in the heart of downtown Rogue River — one of the town's original buildings, updated to blend period character with modern comfort. Wide-plank floors and original architectural details run throughout three queen bedrooms spread across the main floor and a loft.",
       "Out back, a private four-person hot tub and fire pit make for quiet evenings after a day on the river — the Rogue itself is a five-minute walk away, with fishing, rafting, and hiking access. The loft doubles as a game room with air hockey, pool, and an arcade cabinet, and a 70\" smart TV rounds out the living space downstairs.",

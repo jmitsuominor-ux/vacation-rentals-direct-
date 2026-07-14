@@ -84,6 +84,7 @@ export const properties: Property[] = [
     details: {
       maxGuests: 6,
       bedrooms: 3,
+      bathrooms: 2,
       amenityHighlights: [
         "Private hot tub",
         "Fire pit",

@@ -1,5 +1,12 @@
 export type Region = "oregon" | "florida";
 
+/** Builds a property's photo list with a specific photo pinned first (the hero), rest in original order. */
+function photosWithHero(slug: string, count: number, heroNum: number): string[] {
+  const numbers = Array.from({ length: count }, (_, i) => i + 1);
+  const ordered = [heroNum, ...numbers.filter((n) => n !== heroNum)];
+  return ordered.map((n) => `/images/${slug}/${slug}-${String(n).padStart(2, "0")}.jpg`);
+}
+
 export interface PropertyDetails {
   maxGuests: number;
   bedrooms: number;
@@ -72,10 +79,7 @@ export const properties: Property[] = [
     location: "Rogue River, OR",
     region: "oregon",
     tagline: "A restored 1800s storefront in the heart of Rogue River.",
-    photos: Array.from(
-      { length: 51 },
-      (_, i) => `/images/rogue-house/rogue-house-${String(i + 1).padStart(2, "0")}.jpg`
-    ),
+    photos: photosWithHero("rogue-house", 51, 17),
     description: [
       "Rogue House occupies a beautifully restored 1800s storefront — one of the only vacation rentals of its kind in the Rogue Valley — right in the heart of downtown Rogue River. Inside are three bedrooms and a fully equipped kitchen.",
       "Step outside to the private hot tub and fire pit, or walk eight minutes to the river for fishing, swimming, and the kind of afternoon that's hard to leave.",
@@ -104,18 +108,15 @@ export const properties: Property[] = [
     name: "The Loft",
     location: "Oregon City, OR",
     region: "oregon",
-    tagline: "A private 2-bedroom ADU retreat, steps from OC Haus.",
-    photos: Array.from(
-      { length: 17 },
-      (_, i) => `/images/the-loft/the-loft-${String(i + 1).padStart(2, "0")}.jpg`
-    ),
+    tagline: "A private 1-bedroom ADU retreat, steps from OC Haus.",
+    photos: photosWithHero("the-loft", 17, 4),
     description: [
-      "A private retreat tucked into the trees on the same 3/4-acre lot as OC Haus, nestled under cedar trees — a beautifully finished 2-bedroom ADU built by the owner. Two bedrooms sleep four, with a fully equipped kitchen, a shower with dual shower heads, and a private deck that makes the space feel entirely its own.",
+      "A private retreat tucked into the trees on the same 3/4-acre lot as OC Haus, nestled under cedar trees — a beautifully finished ADU built by the owner. One bedroom with a queen bed, plus a bunk nook tucked into the hallway that sleeps two more — four total. Fully equipped kitchen, a shower with dual shower heads, and a private deck that makes the space feel entirely its own.",
       "Oregon City is 25 minutes from Portland — close enough for day trips into the city, far enough to actually unwind. The Oregon Trail Museum, Willamette Falls, and historic downtown are all nearby, with Mount Hood and the Columbia River Gorge an easy drive.",
     ],
     details: {
       maxGuests: 4,
-      bedrooms: 2,
+      bedrooms: 1,
       bathrooms: 1,
       amenityHighlights: [
         "Private deck",
@@ -169,10 +170,7 @@ export const properties: Property[] = [
     location: "Ocala, FL",
     region: "florida",
     tagline: "Ocala's ultimate entertainment home.",
-    photos: Array.from(
-      { length: 45 },
-      (_, i) => `/images/brick-city-playhouse/brick-city-playhouse-${String(i + 1).padStart(2, "0")}.jpg`
-    ),
+    photos: photosWithHero("brick-city-playhouse", 45, 33),
     description: [
       "This fully renovated 4-bedroom, 2-bathroom home sleeps up to 8 and was designed around one idea: every corner should have something worth talking about. The garage was converted into the best game room in Ocala — a 4-player arcade with reclining theater chairs, full-size air hockey, skee-ball, pool table, ping pong, an 80\" TV, and a custom hexagon LED neon ceiling. Sign the Playing Card Wall on your way out — every group that's ever stayed here is on it.",
       "Outside, a private pool and hot tub stay open year-round in Florida's climate, and the fully screened lanai has an 8-person dining table and a fire pit lounge — ideal after a day at the World Equestrian Center or the springs. The yard is fully fenced and private.",

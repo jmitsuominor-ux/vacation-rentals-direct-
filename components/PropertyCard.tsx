@@ -8,7 +8,7 @@ export function PropertyCard({ property }: { property: Property }) {
   const thumbnail = property.photos?.[0];
 
   return (
-    <article className="property-card">
+    <article className={`property-card${isFlorida ? " florida" : ""}`}>
       {thumbnail ? (
         <div className="property-photo-image">
           <Image

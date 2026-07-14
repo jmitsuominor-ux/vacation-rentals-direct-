@@ -11,6 +11,7 @@
   --ink-dim: #c9b99b;
   --accent: #c08a3e;
   --accent-ink: #241c15;
+  --river: #5a96a3;
   --oregon: #7c8f66;
   --florida: #c06a42;
   --line: rgba(241, 230, 208, 0.14);
@@ -105,7 +106,7 @@ input {
 }
 .site-nav a:hover,
 .site-nav a:focus-visible {
-  color: var(--ink);
+  color: var(--river);
 }
 
 .site-footer {
@@ -185,6 +186,12 @@ input {
   height: 1px;
   background: var(--line);
 }
+#oregon .region-head::after {
+  background: linear-gradient(90deg, rgba(124, 143, 102, 0.5), var(--line) 70%);
+}
+#florida .region-head::after {
+  background: linear-gradient(90deg, rgba(192, 106, 66, 0.5), var(--line) 70%);
+}
 
 .property-grid {
   display: grid;
@@ -195,10 +202,14 @@ input {
 .property-card {
   background: var(--surface);
   border: 1px solid var(--line);
+  border-top: 3px solid var(--oregon);
   border-radius: 2px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+}
+.property-card.florida {
+  border-top-color: var(--florida);
 }
 .property-photo {
   aspect-ratio: 4 / 3;
@@ -524,8 +535,8 @@ input {
   color: var(--ink-dim);
 }
 .property-layout .external-links a:hover {
-  color: var(--ink);
-  border-color: var(--ink-dim);
+  color: var(--river);
+  border-color: var(--river);
 }
 
 /* ---------- Booking widget ---------- */
@@ -588,7 +599,7 @@ input {
   color: var(--ink-dim);
 }
 .quote-line.total {
-  color: var(--ink);
+  color: var(--river);
   font-weight: 600;
   border-top: 1px solid var(--line);
   margin-top: 0.4rem;

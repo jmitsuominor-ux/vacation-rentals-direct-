@@ -15,6 +15,8 @@
   --oregon: #7c8f66;
   --florida: #c06a42;
   --line: rgba(241, 230, 208, 0.14);
+  --card-surface: #2c3524;
+  --card-surface-2: #3a4630;
 
   --font-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
   --font-body: "Seravek", "Gill Sans Nova", "Gill Sans", Calibri, "Trebuchet MS", sans-serif;
@@ -196,6 +198,16 @@ input {
 }
 
 /* ---------- Region groups + property grid ---------- */
+.regions-band {
+  background: linear-gradient(
+    180deg,
+    rgba(124, 143, 102, 0.08) 0%,
+    transparent 20%,
+    transparent 65%,
+    rgba(192, 106, 66, 0.1) 100%
+  );
+  padding-bottom: 2rem;
+}
 .region {
   padding-top: 3.5rem;
 }
@@ -238,7 +250,7 @@ input {
 }
 
 .property-card {
-  background: linear-gradient(160deg, var(--surface-2), var(--surface) 60%);
+  background: linear-gradient(160deg, var(--card-surface-2), var(--card-surface) 60%);
   border: 1px solid var(--line);
   border-top: 3px solid var(--oregon);
   border-radius: 2px;

@@ -8,7 +8,10 @@ export function PropertyCard({ property }: { property: Property }) {
   const thumbnail = property.photos?.[0];
 
   return (
-    <article className={`property-card${isFlorida ? " florida" : ""}`}>
+    <Link
+      href={`/properties/${property.slug}`}
+      className={`property-card${isFlorida ? " florida" : ""}`}
+    >
       {thumbnail ? (
         <div className="property-photo-image">
           <Image
@@ -28,10 +31,8 @@ export function PropertyCard({ property }: { property: Property }) {
         <span className={`tag${isFlorida ? " florida" : ""}`}>{property.location}</span>
         <h3>{property.name}</h3>
         <p>{property.tagline}</p>
-        <Link href={`/properties/${property.slug}`} className="cta">
-          Check dates
-        </Link>
+        <span className="cta">Check dates</span>
       </div>
-    </article>
+    </Link>
   );
 }

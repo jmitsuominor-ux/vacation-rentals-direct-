@@ -5,8 +5,8 @@
 */
 :root {
   --ground: #241c15;
-  --surface: #2f251b;
-  --surface-2: #362b1f;
+  --surface: #3a2c1e;
+  --surface-2: #4a3623;
   --ink: #f1e6d0;
   --ink-dim: #c9b99b;
   --accent: #c08a3e;
@@ -126,24 +126,19 @@ input {
 
 /* ---------- Hero ---------- */
 .hero {
-  padding: 5.5rem 0 4rem;
+  padding: 7rem 0 5rem;
   border-bottom: 1px solid var(--line);
   position: relative;
   overflow: hidden;
-}
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: -30% 10% auto auto;
-  width: 40rem;
-  height: 40rem;
-  background: repeating-radial-gradient(
-    circle at center,
-    rgba(192, 138, 62, 0.07) 0 2px,
-    transparent 2px 22px
-  );
-  pointer-events: none;
-  z-index: 0;
+  background-image: linear-gradient(
+      100deg,
+      var(--ground) 32%,
+      rgba(36, 28, 21, 0.82) 55%,
+      rgba(36, 28, 21, 0.4) 100%
+    ),
+    url("/images/warren-house/warren-house-14.jpg");
+  background-size: cover;
+  background-position: center 60%;
 }
 .hero > * {
   position: relative;
@@ -243,7 +238,7 @@ input {
 }
 
 .property-card {
-  background: var(--surface);
+  background: linear-gradient(160deg, var(--surface-2), var(--surface) 60%);
   border: 1px solid var(--line);
   border-top: 3px solid var(--oregon);
   border-radius: 2px;
@@ -484,7 +479,7 @@ input {
 .lightbox {
   position: fixed;
   inset: 0;
-  background: rgba(12, 9, 6, 0.94);
+  background: radial-gradient(ellipse at center, rgba(58, 44, 30, 0.97), rgba(18, 13, 8, 0.985) 80%);
   z-index: 100;
   display: flex;
   align-items: center;
@@ -581,7 +576,7 @@ input {
 .proof-badges {
   margin-top: 1rem;
   padding: 1rem 1.25rem;
-  background: var(--surface);
+  background: linear-gradient(160deg, var(--surface-2), var(--surface) 60%);
   border: 1px solid var(--line);
   border-radius: 2px;
 }
@@ -613,7 +608,7 @@ input {
 
 /* ---------- Booking widget ---------- */
 .booking-widget {
-  background: var(--surface);
+  background: linear-gradient(160deg, var(--surface-2), var(--surface) 60%);
   border: 1px solid var(--line);
   border-radius: 2px;
   padding: 1.5rem;

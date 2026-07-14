@@ -7,8 +7,8 @@ export default function HomePage() {
 
   return (
     <main>
-      <div className="wrap">
-        <section className="hero">
+      <section className="hero">
+        <div className="wrap">
           <p className="label">J &amp; F Rental Co.</p>
           <h1>
             Five homes, <em>kept</em> well.
@@ -22,8 +22,10 @@ export default function HomePage() {
             <span>Real humans, fast replies</span>
             <span>5 homes across 2 states</span>
           </div>
-        </section>
+        </div>
+      </section>
 
+      <div className="wrap">
         <section className="region" id="oregon">
           <div className="region-head">
             <h2>{regionLabels.oregon}</h2>

@@ -72,6 +72,10 @@ export const properties: Property[] = [
     location: "Rogue River, OR",
     region: "oregon",
     tagline: "A restored 1800s storefront in the heart of Rogue River.",
+    photos: Array.from(
+      { length: 51 },
+      (_, i) => `/images/rogue-house/rogue-house-${String(i + 1).padStart(2, "0")}.jpg`
+    ),
     description: [
       "Rogue House occupies a beautifully restored 1800s storefront — one of the only vacation rentals of its kind in the Rogue Valley — right in the heart of downtown Rogue River. Inside are three bedrooms and a fully equipped kitchen.",
       "Step outside to the private hot tub and fire pit, or walk eight minutes to the river for fishing, swimming, and the kind of afternoon that's hard to leave.",

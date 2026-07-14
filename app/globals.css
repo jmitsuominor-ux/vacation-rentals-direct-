@@ -142,7 +142,7 @@ input {
 /* ---------- Hero ---------- */
 .hero {
   padding: 7rem 0 5rem;
-  border-bottom: 1px solid var(--line);
+  border-bottom: none;
   position: relative;
   overflow: hidden;
   background-image: linear-gradient(
@@ -151,6 +151,7 @@ input {
       rgba(36, 28, 21, 0.82) 55%,
       rgba(36, 28, 21, 0.4) 100%
     ),
+    linear-gradient(180deg, transparent 68%, rgba(76, 80, 57, 0.95) 100%),
     url("/images/warren-house/warren-house-14.jpg");
   background-size: cover;
   background-position: center 60%;
@@ -214,8 +215,9 @@ input {
 .regions-band {
   background: linear-gradient(
     180deg,
-    rgba(124, 143, 102, 0.22) 0%,
-    transparent 22%,
+    rgba(124, 143, 102, 0.48) 0%,
+    rgba(124, 143, 102, 0.3) 10%,
+    transparent 26%,
     transparent 60%,
     rgba(232, 106, 44, 0.32) 100%
   );

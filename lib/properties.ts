@@ -135,6 +135,10 @@ export const properties: Property[] = [
     location: "Oregon City, OR",
     region: "oregon",
     tagline: "A spacious ranch home on 3/4 acre, minutes from Portland.",
+    photos: Array.from(
+      { length: 38 },
+      (_, i) => `/images/oc-haus/oc-haus-${String(i + 1).padStart(2, "0")}.jpg`
+    ),
     description: [
       "OC Haus is a spacious 4-bedroom, 2-bathroom ranch home on 3/4 of an acre in historic Oregon City, just 25 minutes from Portland. The single-level layout sleeps 8 comfortably, with a king bed master suite, a fireplace in the living room, and a fully equipped kitchen ready for family meals.",
       "Outside, a large fire pit anchors the backyard — one of the biggest you'll find in any rental in the area — with plenty of room to spread out and actually feel like you've left the city.",

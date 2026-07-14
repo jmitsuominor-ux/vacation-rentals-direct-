@@ -104,6 +104,10 @@ export const properties: Property[] = [
     location: "Oregon City, OR",
     region: "oregon",
     tagline: "A private 2-bedroom ADU retreat, steps from OC Haus.",
+    photos: Array.from(
+      { length: 17 },
+      (_, i) => `/images/the-loft/the-loft-${String(i + 1).padStart(2, "0")}.jpg`
+    ),
     description: [
       "A private retreat tucked into the trees on the same 3/4-acre lot as OC Haus, nestled under cedar trees — a beautifully finished 2-bedroom ADU built by the owner. Two bedrooms sleep four, with a fully equipped kitchen, a shower with dual shower heads, and a private deck that makes the space feel entirely its own.",
       "Oregon City is 25 minutes from Portland — close enough for day trips into the city, far enough to actually unwind. The Oregon Trail Museum, Willamette Falls, and historic downtown are all nearby, with Mount Hood and the Columbia River Gorge an easy drive.",

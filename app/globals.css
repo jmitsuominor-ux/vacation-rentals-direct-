@@ -17,6 +17,7 @@
   --line: rgba(241, 230, 208, 0.14);
   --card-surface: #2c3524;
   --card-surface-2: #3a4630;
+  --noise: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='linear' slope='0.15'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 
   --font-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
   --font-body: "Seravek", "Gill Sans Nova", "Gill Sans", Calibri, "Trebuchet MS", sans-serif;
@@ -44,23 +45,15 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  background: var(--ground);
+  background-color: var(--ground);
+  background-image: var(--noise);
+  background-blend-mode: overlay;
+  background-size: 200px 200px;
   color: var(--ink);
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-}
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: 45;
-  pointer-events: none;
-  opacity: 0.5;
-  mix-blend-mode: overlay;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  background-size: 200px 200px;
 }
 
 a {
@@ -91,7 +84,10 @@ input {
   position: sticky;
   top: 0;
   z-index: 40;
-  background: rgba(36, 28, 21, 0.92);
+  background-color: rgba(36, 28, 21, 0.92);
+  background-image: var(--noise);
+  background-blend-mode: overlay;
+  background-size: 200px 200px;
   backdrop-filter: blur(6px);
 }
 .site-header .wrap {
@@ -129,7 +125,9 @@ input {
   padding: 7.5rem 0 2.5rem;
   color: var(--ink-dim);
   font-size: 0.85rem;
-  background: linear-gradient(180deg, #63351d, #7c4420);
+  background-image: linear-gradient(180deg, #63351d, #7c4420), var(--noise);
+  background-blend-mode: normal, overlay;
+  background-size: auto, 200px 200px;
 }
 .site-footer .wrap {
   display: flex;
@@ -145,13 +143,13 @@ input {
   border-bottom: none;
   position: relative;
   overflow: hidden;
-  background-image: linear-gradient(
+  background-image: linear-gradient(180deg, transparent 72%, var(--ground) 100%),
+    linear-gradient(
       100deg,
       var(--ground) 32%,
       rgba(36, 28, 21, 0.82) 55%,
       rgba(36, 28, 21, 0.4) 100%
     ),
-    linear-gradient(180deg, transparent 68%, rgba(76, 80, 57, 0.95) 100%),
     url("/images/warren-house/warren-house-14.jpg");
   background-size: cover;
   background-position: center 60%;
@@ -213,14 +211,18 @@ input {
 
 /* ---------- Region groups + property grid ---------- */
 .regions-band {
-  background: linear-gradient(
-    180deg,
-    rgba(124, 143, 102, 0.48) 0%,
-    rgba(124, 143, 102, 0.3) 10%,
-    transparent 26%,
-    transparent 60%,
-    rgba(232, 106, 44, 0.32) 100%
-  );
+  background-image: linear-gradient(
+      180deg,
+      transparent 0%,
+      rgba(124, 143, 102, 0.48) 16%,
+      rgba(124, 143, 102, 0.3) 26%,
+      transparent 40%,
+      transparent 60%,
+      rgba(232, 106, 44, 0.32) 100%
+    ),
+    var(--noise);
+  background-blend-mode: normal, overlay;
+  background-size: auto, 200px 200px;
   padding-bottom: 2rem;
 }
 .region {

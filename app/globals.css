@@ -84,7 +84,7 @@ input {
   position: sticky;
   top: 0;
   z-index: 40;
-  background-color: rgba(36, 28, 21, 0.92);
+  background-color: rgba(58, 70, 48, 0.92);
   background-image: var(--noise);
   background-blend-mode: overlay;
   background-size: 200px 200px;
@@ -143,7 +143,7 @@ input {
   border-bottom: none;
   position: relative;
   overflow: hidden;
-  background-image: linear-gradient(180deg, transparent 72%, var(--ground) 100%),
+  background-image: linear-gradient(180deg, transparent 60%, #3a4630 100%),
     linear-gradient(
       100deg,
       var(--ground) 32%,
@@ -213,8 +213,8 @@ input {
 .regions-band {
   background-image: linear-gradient(
       180deg,
-      transparent 0%,
-      rgba(124, 143, 102, 0.48) 16%,
+      #3a4630 0%,
+      rgba(124, 143, 102, 0.48) 12%,
       rgba(124, 143, 102, 0.3) 26%,
       transparent 40%,
       transparent 60%,

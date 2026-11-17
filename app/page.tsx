@@ -13,12 +13,11 @@ export default function HomePage() {
           <Image
             src="/images/brand/logo-illustration.png"
             alt="Hamasu Homes"
-            width={1363}
-            height={374}
+            width={1401}
+            height={626}
             className="hero-logo"
             priority
           />
-          <p className="label">Hamasu Homes</p>
           <h1>
             Curated stays. <em>Genuine</em> hospitality.
           </h1>

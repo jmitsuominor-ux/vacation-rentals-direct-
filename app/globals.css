@@ -98,16 +98,9 @@ input {
   padding-bottom: 1.1rem;
 }
 .brand {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
   font-family: var(--font-display);
   font-size: 1.3rem;
   letter-spacing: 0.01em;
-}
-.brand-mark {
-  height: 2rem;
-  width: 2rem;
 }
 .site-nav {
   display: flex;
@@ -183,6 +176,12 @@ input {
   height: 5px;
   border-radius: 50%;
   background: var(--accent);
+}
+.hero-logo {
+  display: block;
+  height: clamp(5rem, 12vw, 8.5rem);
+  width: auto;
+  margin: 0 0 1.5rem;
 }
 .hero .label {
   font-family: var(--font-body);

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export function Header() {
@@ -6,13 +5,6 @@ export function Header() {
     <header className="site-header">
       <div className="wrap">
         <Link href="/" className="brand">
-          <Image
-            src="/images/brand/logo-mark.png"
-            alt=""
-            width={32}
-            height={32}
-            className="brand-mark"
-          />
           Hamasu Homes
         </Link>
         <nav className="site-nav">

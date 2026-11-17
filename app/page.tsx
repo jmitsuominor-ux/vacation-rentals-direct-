@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { PropertyCard } from "@/components/PropertyCard";
 import { propertiesByRegion, regionLabels } from "@/lib/properties";
 
@@ -9,6 +10,14 @@ export default function HomePage() {
     <main>
       <section className="hero">
         <div className="wrap">
+          <Image
+            src="/images/brand/logo-illustration.png"
+            alt="Hamasu Homes"
+            width={1363}
+            height={374}
+            className="hero-logo"
+            priority
+          />
           <p className="label">Hamasu Homes</p>
           <h1>
             Curated stays. <em>Genuine</em> hospitality.

@@ -14,6 +14,13 @@ export const metadata: Metadata = {
     description,
     type: "website",
     url: "https://hamasuhomes.com",
+    images: ["/images/warren-house/warren-house-14.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hamasu Homes",
+    description,
+    images: ["/images/warren-house/warren-house-14.jpg"],
   },
 };
 

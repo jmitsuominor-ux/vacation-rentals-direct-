@@ -18,6 +18,7 @@ export async function generateMetadata({
   if (!property) return {};
 
   const title = `${property.name} — ${property.location} | Hamasu Homes`;
+  const images = property.photos?.[0] ? [property.photos[0]] : undefined;
   return {
     title,
     description: property.tagline,
@@ -25,6 +26,13 @@ export async function generateMetadata({
       title,
       description: property.tagline,
       type: "website",
+      images,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description: property.tagline,
+      images,
     },
   };
 }

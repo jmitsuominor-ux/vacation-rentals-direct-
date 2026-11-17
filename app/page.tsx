@@ -38,7 +38,9 @@ export default function HomePage() {
           <section className="region" id="oregon">
             <div className="region-head">
               <h2>{regionLabels.oregon}</h2>
-              <span className="count">{oregon.length} properties</span>
+              <span className="count">
+                {oregon.length} propert{oregon.length === 1 ? "y" : "ies"}
+              </span>
             </div>
             <div className="property-grid">
               {oregon.map((property) => (
@@ -50,7 +52,9 @@ export default function HomePage() {
           <section className="region" id="florida">
             <div className="region-head">
               <h2>{regionLabels.florida}</h2>
-              <span className="count">{florida.length} property</span>
+              <span className="count">
+                {florida.length} propert{florida.length === 1 ? "y" : "ies"}
+              </span>
             </div>
             <div className="property-grid">
               {florida.map((property) => (

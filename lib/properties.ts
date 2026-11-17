@@ -76,7 +76,7 @@ export const properties: Property[] = [
     location: "Rogue River, OR",
     region: "oregon",
     tagline: "A restored 1800s storefront with a hot tub made for lingering.",
-    photos: photosWithHero("rogue-house", 51, 17),
+    photos: photosWithHero("rogue-house", 51, 50),
     description: [
       "Rogue House occupies a beautifully restored 1800s storefront — one of the only vacation rentals of its kind in the Rogue Valley — right in the heart of downtown Rogue River. Inside are three bedrooms and a fully equipped kitchen.",
       "Step outside to the private hot tub and fire pit, or walk eight minutes to the river for fishing, swimming, and the kind of afternoon that's hard to leave.",
@@ -134,10 +134,7 @@ export const properties: Property[] = [
     location: "Oregon City, OR",
     region: "oregon",
     tagline: "Room to roam on 3/4 acre, 25 minutes from Portland.",
-    photos: Array.from(
-      { length: 38 },
-      (_, i) => `/images/oc-haus/oc-haus-${String(i + 1).padStart(2, "0")}.jpg`
-    ),
+    photos: photosWithHero("oc-haus", 38, 4),
     description: [
       "OC Haus is a spacious 4-bedroom, 2-bathroom ranch home on 3/4 of an acre in historic Oregon City, just 25 minutes from Portland. The single-level layout sleeps 8 comfortably, with a king bed master suite, a fireplace in the living room, and a fully equipped kitchen ready for family meals.",
       "Outside, a large fire pit anchors the backyard — one of the biggest you'll find in any rental in the area — with plenty of room to spread out and actually feel like you've left the city.",

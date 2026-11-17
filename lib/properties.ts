@@ -105,10 +105,10 @@ export const properties: Property[] = [
     name: "The Loft",
     location: "Oregon City, OR",
     region: "oregon",
-    tagline: "A cedar-shaded hideaway, just steps from OC Haus.",
+    tagline: "A cedar-shaded hideaway with a deck all your own.",
     photos: photosWithHero("the-loft", 17, 4),
     description: [
-      "A private retreat tucked into the trees on the same 3/4-acre lot as OC Haus, nestled under cedar trees — a beautifully finished ADU built by the owner. One bedroom with a queen bed, plus a bunk nook tucked into the hallway that sleeps two more — four total. Fully equipped kitchen, a shower with dual shower heads, and a private deck that makes the space feel entirely its own.",
+      "A private retreat tucked into the trees on a 3/4-acre lot, nestled under cedar trees — a beautifully finished ADU built by the owner. One bedroom with a queen bed, plus a bunk nook tucked into the hallway that sleeps two more — four total. Fully equipped kitchen, a shower with dual shower heads, and a private deck that makes the space feel entirely its own.",
       "Oregon City is 25 minutes from Portland — close enough for day trips into the city, far enough to actually unwind. The Oregon Trail Museum, Willamette Falls, and historic downtown are all nearby, with Mount Hood and the Columbia River Gorge an easy drive.",
     ],
     details: {

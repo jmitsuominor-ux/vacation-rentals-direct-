@@ -3,7 +3,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import "./globals.css";
 
-const description = "Five kept homes across Oregon and Florida. Book direct.";
+const description = "Curated stays. Genuine hospitality. Five homes across Oregon and Florida. Book direct.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://hamasuhomes.com"),

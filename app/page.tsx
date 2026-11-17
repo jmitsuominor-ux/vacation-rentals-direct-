@@ -11,7 +11,7 @@ export default function HomePage() {
         <div className="wrap">
           <p className="label">Hamasu Homes</p>
           <h1>
-            Five homes, <em>kept</em> well.
+            Curated stays. <em>Genuine</em> hospitality.
           </h1>
           <p>
             A small collection of character-filled stays across the Rogue Valley and

@@ -42,7 +42,7 @@ export const properties: Property[] = [
     name: "Warren House",
     location: "Rogue River, OR",
     region: "oregon",
-    tagline: "A hidden historic home in the heart of Rogue River.",
+    tagline: "History downstairs, game night upstairs, hot tub out back.",
     photos: photosWithHero("warren-house", 33, 14),
     description: [
       "Warren House is a restored 1800s cottage in the heart of downtown Rogue River — one of the town's original buildings, updated to blend period character with modern comfort. Wide-plank floors and original architectural details run throughout three queen bedrooms spread across the main floor and a loft.",
@@ -75,7 +75,7 @@ export const properties: Property[] = [
     name: "Rogue House",
     location: "Rogue River, OR",
     region: "oregon",
-    tagline: "A restored 1800s storefront in the heart of Rogue River.",
+    tagline: "A restored 1800s storefront with a hot tub made for lingering.",
     photos: photosWithHero("rogue-house", 51, 17),
     description: [
       "Rogue House occupies a beautifully restored 1800s storefront — one of the only vacation rentals of its kind in the Rogue Valley — right in the heart of downtown Rogue River. Inside are three bedrooms and a fully equipped kitchen.",
@@ -105,7 +105,7 @@ export const properties: Property[] = [
     name: "The Loft",
     location: "Oregon City, OR",
     region: "oregon",
-    tagline: "A private 1-bedroom ADU retreat, steps from OC Haus.",
+    tagline: "A cedar-shaded hideaway, just steps from OC Haus.",
     photos: photosWithHero("the-loft", 17, 4),
     description: [
       "A private retreat tucked into the trees on the same 3/4-acre lot as OC Haus, nestled under cedar trees — a beautifully finished ADU built by the owner. One bedroom with a queen bed, plus a bunk nook tucked into the hallway that sleeps two more — four total. Fully equipped kitchen, a shower with dual shower heads, and a private deck that makes the space feel entirely its own.",
@@ -133,7 +133,7 @@ export const properties: Property[] = [
     name: "OC Haus",
     location: "Oregon City, OR",
     region: "oregon",
-    tagline: "A spacious ranch home on 3/4 acre, minutes from Portland.",
+    tagline: "Room to roam on 3/4 acre, 25 minutes from Portland.",
     photos: Array.from(
       { length: 38 },
       (_, i) => `/images/oc-haus/oc-haus-${String(i + 1).padStart(2, "0")}.jpg`
@@ -166,7 +166,7 @@ export const properties: Property[] = [
     name: "Brick City Playhouse",
     location: "Ocala, FL",
     region: "florida",
-    tagline: "Ocala's ultimate entertainment home.",
+    tagline: "Arcade nights, a private pool, and a wall of fame to sign.",
     photos: photosWithHero("brick-city-playhouse", 45, 33),
     description: [
       "This fully renovated 4-bedroom, 2-bathroom home sleeps up to 8 and was designed around one idea: every corner should have something worth talking about. The garage was converted into the best game room in Ocala — a 4-player arcade with reclining theater chairs, full-size air hockey, skee-ball, pool table, ping pong, an 80\" TV, and a custom hexagon LED neon ceiling. Sign the Playing Card Wall on your way out — every group that's ever stayed here is on it.",

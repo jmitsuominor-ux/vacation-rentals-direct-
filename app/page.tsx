@@ -22,8 +22,8 @@ export default function HomePage() {
             Curated stays. <em>Genuine</em> hospitality.
           </h1>
           <p>
-            A small collection of character-filled stays across the Rogue Valley and
-            Ocala, Florida. Book direct and deal with us, not a platform.
+            A small collection of character-filled stays across the Rogue Valley, Oregon
+            and Ocala, Florida. Book direct and deal with us, not a platform.
           </p>
           <div className="trust-bar">
             <span>No platform fees</span>

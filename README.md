@@ -1,4 +1,4 @@
-# Rogue Rental Houses — direct booking site
+# Hamasu Homes — direct booking site
 
 Direct booking site for 5 short-term rentals, currently listed on Airbnb and VRBO:
 

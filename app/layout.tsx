@@ -7,10 +7,10 @@ const description = "Five kept homes across Oregon and Florida. Book direct.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://hamasuhomes.com"),
-  title: "Rogue Rental Houses — Book Direct",
+  title: "Hamasu Homes — Book Direct",
   description,
   openGraph: {
-    title: "Rogue Rental Houses",
+    title: "Hamasu Homes",
     description,
     type: "website",
     url: "https://hamasuhomes.com",

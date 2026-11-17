@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Cancellation Policy — Rogue Rental Houses",
+  title: "Cancellation Policy — Hamasu Homes",
 };
 
 export default function CancellationPolicyPage() {

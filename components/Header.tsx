@@ -5,7 +5,7 @@ export function Header() {
     <header className="site-header">
       <div className="wrap">
         <Link href="/" className="brand">
-          Rogue Rental Houses
+          Hamasu Homes
         </Link>
         <nav className="site-nav">
           <Link href="/#oregon">Oregon</Link>

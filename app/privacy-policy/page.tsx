@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Rogue Rental Houses",
+  title: "Privacy Policy — Hamasu Homes",
 };
 
 export default function PrivacyPolicyPage() {

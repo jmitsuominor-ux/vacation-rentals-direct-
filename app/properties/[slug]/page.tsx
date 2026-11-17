@@ -17,7 +17,7 @@ export async function generateMetadata({
   const property = getProperty(slug);
   if (!property) return {};
 
-  const title = `${property.name} — ${property.location} | Rogue Rental Houses`;
+  const title = `${property.name} — ${property.location} | Hamasu Homes`;
   return {
     title,
     description: property.tagline,

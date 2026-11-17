@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { properties } from "@/lib/properties";
 
-const SITE_URL = "https://jandfrental.com";
+const SITE_URL = "https://hamasuhomes.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = ["", "/cancellation-policy", "/house-rules", "/privacy-policy"].map(

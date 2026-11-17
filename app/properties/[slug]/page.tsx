@@ -17,7 +17,7 @@ export async function generateMetadata({
   const property = getProperty(slug);
   if (!property) return {};
 
-  const title = `${property.name} — ${property.location} | J & F Rental Co.`;
+  const title = `${property.name} — ${property.location} | Rogue Rental Houses`;
   return {
     title,
     description: property.tagline,

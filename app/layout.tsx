@@ -6,14 +6,14 @@ import "./globals.css";
 const description = "Five kept homes across Oregon and Florida. Book direct.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://jandfrental.com"),
-  title: "J & F Rental Co. — Book Direct",
+  metadataBase: new URL("https://hamasuhomes.com"),
+  title: "Rogue Rental Houses — Book Direct",
   description,
   openGraph: {
-    title: "J & F Rental Co.",
+    title: "Rogue Rental Houses",
     description,
     type: "website",
-    url: "https://jandfrental.com",
+    url: "https://hamasuhomes.com",
   },
 };
 

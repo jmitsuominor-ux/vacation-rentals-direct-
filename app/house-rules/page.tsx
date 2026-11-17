@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "House Rules — J & F Rental Co.",
+  title: "House Rules — Rogue Rental Houses",
 };
 
 export default function HouseRulesPage() {

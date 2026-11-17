@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/api/",
     },
-    sitemap: "https://jandfrental.com/sitemap.xml",
+    sitemap: "https://hamasuhomes.com/sitemap.xml",
   };
 }

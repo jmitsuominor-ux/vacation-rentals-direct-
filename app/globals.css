@@ -134,18 +134,27 @@ input {
   border-bottom: none;
   position: relative;
   overflow: hidden;
+}
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  object-fit: cover;
+  object-position: center 60%;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
   background-image: linear-gradient(180deg, transparent 60%, #3a4630 100%),
     linear-gradient(
       100deg,
       var(--ground) 32%,
       rgba(36, 28, 21, 0.82) 55%,
       rgba(36, 28, 21, 0.4) 100%
-    ),
-    url("/images/warren-house/warren-house-14.jpg");
-  background-size: cover;
-  background-position: center 60%;
+    );
 }
-.hero > * {
+.hero > .wrap {
   position: relative;
   z-index: 1;
 }

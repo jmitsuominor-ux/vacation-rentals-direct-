@@ -9,6 +9,15 @@ export default function HomePage() {
   return (
     <main>
       <section className="hero">
+        <Image
+          src="/images/warren-house/warren-house-14.jpg"
+          alt=""
+          fill
+          sizes="100vw"
+          priority
+          className="hero-bg"
+        />
+        <div className="hero-overlay" />
         <div className="wrap">
           <Image
             src="/images/brand/logo-illustration.png"

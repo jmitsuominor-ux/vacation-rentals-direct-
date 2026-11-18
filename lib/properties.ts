@@ -64,7 +64,7 @@ export const properties: Property[] = [
       checkOut: "11:00 AM",
       minStay: "3 nights on weekends",
     },
-    hostawayListingId: null,
+    hostawayListingId: "621498",
     externalListings: {
       airbnb: "https://airbnb.com/h/hiddenhistorichomeintheheartofrogueriver",
       vrbo: "https://www.vrbo.com/2905224",
@@ -94,7 +94,7 @@ export const properties: Property[] = [
         "Fully equipped kitchen",
       ],
     },
-    hostawayListingId: null,
+    hostawayListingId: "621493",
     externalListings: {
       airbnb: "https://airbnb.com/h/roguehouse",
       vrbo: "https://www.vrbo.com/3102315",
@@ -122,7 +122,7 @@ export const properties: Property[] = [
         "Pet friendly",
       ],
     },
-    hostawayListingId: null,
+    hostawayListingId: "621492",
     externalListings: {
       airbnb: "https://airbnb.com/h/oregoncityloft",
       vrbo: "https://www.vrbo.com/2623062",
@@ -152,7 +152,7 @@ export const properties: Property[] = [
         "Pet friendly",
       ],
     },
-    hostawayListingId: null,
+    hostawayListingId: "621497",
     externalListings: {
       airbnb: "https://airbnb.com/h/ochaus",
       vrbo: "https://www.vrbo.com/2607555",
@@ -184,7 +184,7 @@ export const properties: Property[] = [
       checkOut: "11:00 AM",
       minStay: "3 nights",
     },
-    hostawayListingId: null,
+    hostawayListingId: "621494",
     externalListings: {
       airbnb: "https://airbnb.com/h/ocalaoasisfl",
       vrbo: "https://www.vrbo.com/5119416",
